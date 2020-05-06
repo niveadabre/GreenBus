@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Bus Ticket Booking System</title>
+        <meta name="description" content="">
+
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css1/bootstrap.min.css">
+        <link rel="stylesheet" href="css1/font-awesome.css">
+        <link rel="stylesheet" href="css1/animate.css">
+        <link rel="stylesheet" href="css1/css1.css">
+        <link rel="stylesheet" href="css1/css2.css">
+
+        <script src="js1/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+	<script type='text/javascript'>
+	function validateForm(){
+					var x=document.forms["contactform"]["name"].value;
+					if(x==null||x=="")
+					{
+					alert("Name must be filled out");
+					return false;
+					}
+					var y=document.forms["contactform"]["email"].value;
+					if(y==null||y=="")
+					{
+					alert("Email must be filled out");
+					return false;
+					}
+					
+	
+				}
+
+</script>
+    </head>
+    <body>
+        
+
+        <div class="site-header">
+            <div class="container">
+                <div class="main-header">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-10">
+                            <div class="logo">
+                                
+                            </div> <!-- /.logo -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-8 col-sm-6 col-xs-2">
+                            <div class="main-menu">
+                                <ul class="visible-lg visible-md">
+                                    <li><a href="index.html">Home</a></li>
+					<li><a href="aboutu.html">About Us</a></li>
+                                    <li><a href="print.jsp">Print Ticket</a></li>
+                                    
+                                    
+                                    <li  class="active"><a href="contact.html">Contact Us</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+                                </ul>
+                                <a href="#" class="toggle-menu visible-sm visible-xs">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div> <!-- /.main-menu -->
+                        </div> <!-- /.col-md-8 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.main-header -->
+                <div class="row">
+                    <div class="col-md-12 visible-sm visible-xs">
+                        <div class="menu-responsive">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+				<li><a href="aboutu.html">About Us</a></li>
+                                <li><a href="print.jsp">Print Ticket</a></li>
+                                <li><a href="feedback.html">Feedback</a></li>
+                                
+                                <li><a href="contactus.html">Contact</a></li>
+                            </ul>
+                        </div> <!-- /.menu-responsive -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-header -->
+
+        <div class="page-top" id="greenbus">
+        </div> <!-- /.page-header -->
+
+        <div class="contact-page">
+            <div class="container">
+                <div class="row">
+                    
+                        
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <div class="contact-form">
+                            <form name="contactform" id="contactform" onsubmit="return validateForm()"  action="welcome.jsp" method="post">
+                                <p>
+                                    <input name="name" type="text" id="name" placeholder="Your Name">
+                                </p>
+                                <p>
+                                    <input name="email" type="email" id="email" placeholder="Your Email" required="required"> 
+                                </p>
+                                <p>
+                                    <input name="subject" type="text" id="subject" placeholder="Subject"> 
+                                </p>
+                                <p>
+                                    <textarea name="message" id="message" placeholder="Message"></textarea>    
+                                </p>
+                                <input type="submit"  class="mainBtn" id="submit" value="Send Message">
+                            </form>
+			<div class="contact-infos">
+                            <ul>
+				<li>Contact Below:</li>
+                                <li>Ms.Valencia Dias</li>
+                                <li>Ms.Nivea Dabre</li>
+                                <li>Ms.Janice Abraham</li>
+				<li>Ms.Mansi Dmello</li>
+                                <li>Harmony Street, Digital Estate</li>
+                                <li>Mumbai</li>
+                                <li>Tel: 022-2346748</li>
+                                <li>Email: <a href="mailto:info@company.com">info@company.com</a></li>
+                            </ul>
+                        </div>
+                        </div> <!-- /.contact-form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+
+
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <p>Bus ticket Reservation System</p>
+                            </a>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="copyright">
+                            <span>
+                            	
+                                Copyright &copy; 2084 <a href="#">Green Bus</a>
+                            
+                            
+                            
+                            
+                            </span>
+                        </div>
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <ul class="social-icons">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            
+                            <li><a href="#" class="fa fa-rss"></a></li>
+                        </ul>
+                    </div> <!-- /.col-md-4 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.site-footer -->
+
+        <script src="js1/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js1/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js1/bootstrap.js"></script>
+        <script src="js1/plugins.js"></script>
+        <script src="js1/main.js"></script>
+
+        <!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js1/vendor/jquery.gmap3.min.js"></script>
+        
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+            jQuery(function($){
+                $('.first-map, .map-holder').gmap3({
+                    marker:{
+                        address: '16.8496189,96.1288854' 
+                    },
+                        map:{
+                        options:{
+                        zoom: 16,
+                        scrollwheel: false,
+                        streetViewControl : true
+                        }
+                    }
+                });
+            });
+        </script>
+        <!-- templatemo 409 travel -->
+    </body>
+</html>
